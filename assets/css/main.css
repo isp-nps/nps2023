@@ -2348,7 +2348,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.25);
+				background-color: #67777A;
 			}
 
 		table td {
@@ -2439,7 +2439,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(144, 144, 144, 0.25);
+			background-color: #A7C2C7;
 		}
 
 		input[type="submit"]:active,
@@ -2447,7 +2447,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(144, 144, 144, 0.5);
+			background-color: #A7C2C7;
 		}
 
 		input[type="submit"].icon:before,
