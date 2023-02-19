@@ -7,6 +7,9 @@ body, input, select, textarea {
     line-height: 1.65em;
     zoom:100%
 }
+body {
+	-webkit-text-size-adjust: none;
+}
 .at-section__title {
   margin: 0 0 70px;
   color: #000;
@@ -100,6 +103,49 @@ body, input, select, textarea {
 .at-column:hover .at-social {
   margin: 16px 0 0;
   opacity: 1;
+}
+@media (max-width: 800px) {
+  .at-column {
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 50% !important;
+    flex-basis: 50% !important;
+
+  }
+}
+
+@media (max-width: 1100px) {
+  .at-column {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}
+@media screen and (max-width: 1680px) {
+
+  body, input, select, textarea {
+    font-size: 13pt;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  body, input, select, textarea {
+    font-size: 12pt;
+    
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+
+  body, input, select, textarea {
+    font-size: 11pt;
+    letter-spacing: 0.0375em;
+  }
+
 }
 
 .at-user {
