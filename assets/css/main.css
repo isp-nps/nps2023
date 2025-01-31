@@ -3834,6 +3834,8 @@ input, select, textarea {
 		background-image: none !important;
 		height: 70%;
 		background-image: url("../../images/kochi-1024x768.jpg") !important;
+		background-position: center center;
+		background-attachment: fixed;
 	}
 	
 	#main > header {
@@ -3842,7 +3844,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/1659081065775.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/1659081065775.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/1659081065775.jpg");
-		background-attachment: fixed;
+		
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
