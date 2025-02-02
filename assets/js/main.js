@@ -50,6 +50,23 @@
 				offset: $header.outerHeight()
 			});
 
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuButton = document.getElementById("menuToggle");
+				const mobileMenu = document.getElementById("mobileMenu");
+			
+				menuButton.addEventListener("click", function () {
+					mobileMenu.classList.toggle("active");
+				});
+			
+				// Close menu when clicking outside
+				document.addEventListener("click", function (event) {
+					if (!menuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+						mobileMenu.classList.remove("active");
+					}
+				});
+			});
+			
+
 	// Menu.
 	//	$('#menu')
 	//		.append('<a href="#menu" class="close"></a>')
