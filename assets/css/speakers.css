@@ -169,6 +169,15 @@ body {
   width: 100%;
   max-width: 100%;
 }
+.at-user__head {
+  color: #313435;
+  font-weight: 800;
+  font-size: larger;
+  letter-spacing: 0.225em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
 .at-user__name {
   color: #313435;
   font-family: "Open Sans", Helvetica, sans-serif;
