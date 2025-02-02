@@ -3457,128 +3457,62 @@ input, select, textarea {
 		transform: translateX(0);
 	}
 
-/* Header */
+/* Style for the navbar */
+#header {
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333; /* Adjust background color */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Pushes elements to the edges */
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 
-	#header {
-		-moz-transition: background-color 0.2s ease;
-		-webkit-transition: background-color 0.2s ease;
-		-ms-transition: background-color 0.2s ease;
-		transition: background-color 0.2s ease;
-		background: #7A4A1F;
-		height: 3em;
-		left: 0;
-		line-height: 3em;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 10000;
-	}
+/* Style for the title */
+#header h1 {
+    margin: 0;
+}
 
-		#header h1 {
-			-moz-transition: opacity 0.2s ease;
-			-webkit-transition: opacity 0.2s ease;
-			-ms-transition: opacity 0.2s ease;
-			transition: opacity 0.2s ease;
-			height: inherit;
-			left: 1.25em;
-			line-height: inherit;
-			position: absolute;
-			top: 0;
-		}
+/* Ensuring the title remains on the left */
+#header h1 a {
+    color: white;
+    text-decoration: none;
+}
 
-			#header h1 a {
-				border: 0;
-				display: block;
-				height: inherit;
-				line-height: inherit;
-			}
+/* Navbar items */
+#nav {
+    margin-left: auto; /* Pushes nav to the right */
+}
 
-				@media screen and (max-width: 736px) {
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange items in a row */
+    gap: 20px;
+}
 
-					#header h1 a {
-						font-size: 0.8em;
-					}
+#nav ul li {
+    display: inline;
+}
 
-				}
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
 
-		#header nav {
-			height: inherit;
-			line-height: inherit;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
+#nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
 
-			#header nav > ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				white-space: nowrap;
-			}
-
-				#header nav > ul > li {
-					display: inline-block;
-					padding: 0;
-				}
-
-					#header nav > ul > li > a {
-						border: 0;
-						color: #fff;
-						display: block;
-						font-size: 0.8em;
-						letter-spacing: 0.225em;
-						padding: 0 1.5em;
-						text-transform: uppercase;
-					}
-
-						#header nav > ul > li > a.menuToggle {
-							outline: 0;
-							position: relative;
-						}
-
-							#header nav > ul > li > a.menuToggle:after {
-								background-image: url("images/bars.svg");
-								background-position: right center;
-								background-repeat: no-repeat;
-								content: '';
-								display: inline-block;
-								height: 3.75em;
-								vertical-align: top;
-								width: 2em;
-							}
-
-							@media screen and (max-width: 736px) {
-
-								#header nav > ul > li > a.menuToggle {
-									padding: 0 1.5em;
-								}
-
-									#header nav > ul > li > a.menuToggle span {
-										display: none;
-									}
-
-							}
-
-						@media screen and (max-width: 736px) {
-
-							#header nav > ul > li > a {
-								padding: 0 0 0 1.5em;
-							}
-
-						}
-
-					#header nav > ul > li:first-child {
-						margin-left: 0;
-					}
-
-		#header.alt {
-			background: transparent;
-		}
-
-			#header.alt h1 {
-				pointer-events: none;
-				opacity: 0;
-			}
 
 /* Banner */
 
